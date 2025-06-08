@@ -1,0 +1,15 @@
+{
+  "short_name": "阿嬤紀念網站",
+  "name": "緬懷我們親愛的阿嬤",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#D4AF37",
+  "background_color": "#FDF6E3"
+} 

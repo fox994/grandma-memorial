@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Noto Sans TC', 'Microsoft JhengHei', 'PingFang TC', sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: linear-gradient(135deg, rgba(253, 246, 227, 0.9) 0%, rgba(245, 245, 220, 0.9) 100%), 
+                url('./bk/BACKGROUND.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .memorial-card {
+    @apply bg-white/80 backdrop-blur-sm rounded-lg shadow-lg p-6 border border-warm-gold/20;
+  }
+  
+  .memorial-button {
+    @apply bg-warm-gold hover:bg-warm-gold/80 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105;
+  }
+  
+  .memorial-text {
+    @apply text-memorial-gray leading-relaxed;
+  }
+  
+  .traditional-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    @apply text-right;
+  }
+  
+  .traditional-text-optimized {
+    @apply text-center;
+  }
+  
+  .modern-text-layout {
+    @apply text-left;
+  }
+  
+  .prose {
+    @apply max-w-none;
+  }
+  
+  .prose p {
+    @apply mb-4;
+  }
+  
+  .poem-section {
+    @apply mb-6;
+  }
+  
+  .indent-8 {
+    text-indent: 2rem;
+  }
+  
+  .flip-card {
+    perspective: 1000px;
+    @apply w-full h-96;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner,
+  .flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    @apply rounded-lg shadow-lg;
+  }
+  
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .bg-gradient-memorial {
+    background: linear-gradient(135deg, #FDF6E3 0%, #F5F5DC 50%, #E6E6FA 100%);
+  }
+} 

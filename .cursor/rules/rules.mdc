@@ -1,0 +1,34 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+前端網站技術
+- React.js 18 - 現代化框架
+- TypeScript - 型別安全
+- Tailwind CSS - 快速樣式開發
+- Framer Motion - 優雅動畫效果
+
+符合響應式設計
+手機、平板、桌面完美適配
+觸控友善的操作介面
+快速載入優化
+
+最後要上傳到Github page
+
+網站包含三個功能頁面
+1.首頁展示區
+一張照片
+優雅的標題呈現
+
+2.影像紀念專輯
+按時間順序展示照片
+以翻牌的方式呈現
+參考slide.mdc的順序
+
+3.文字紀念專輯
+直式中文的文章方式呈現
+傳統書卷風格設計
+參考word.mdc
+
+
