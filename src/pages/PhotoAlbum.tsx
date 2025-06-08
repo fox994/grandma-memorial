@@ -57,150 +57,180 @@ const PhotoAlbum: React.FC = () => {
     },
     {
       id: 8,
-      images: ['image12.jpeg', 'image13.jpeg', 'image14.jpeg', 'image15.jpeg'],
-      title: '阿嬤神奇的後院',
+      images: ['image12.jpeg', 'image13.jpeg'],
+      title: '阿嬤神奇的後院（一）',
       description: '有向日葵、茄子、仙桃…'
     },
     {
       id: 9,
+      images: ['image14.jpeg', 'image15.jpeg'],
+      title: '阿嬤神奇的後院（二）',
+      description: '綠意盎然的花園世界'
+    },
+    {
+      id: 10,
       images: ['image16.jpeg'],
       title: '阿嬤與她的美麗花園',
       description: ''
     },
     {
-      id: 10,
-      images: ['image17.jpeg', 'image18.jpeg', 'image19.jpeg'],
-      title: '大家都說阿嬤很有福氣',
+      id: 11,
+      images: ['image17.jpeg', 'image18.jpeg'],
+      title: '大家都說阿嬤很有福氣（一）',
       description: '實際上這是我們的福氣！'
     },
     {
-      id: 11,
-      images: ['image20.jpeg', 'image21.jpeg', 'image22.jpeg', 'image23.jpeg'],
-      title: '畢業與結婚',
-      description: ''
+      id: 12,
+      images: ['image19.jpeg'],
+      title: '大家都說阿嬤很有福氣（二）',
+      description: '阿嬤的慈祥笑容'
     },
     {
-      id: 12,
+      id: 13,
+      images: ['image20.jpeg', 'image21.jpeg'],
+      title: '畢業時光',
+      description: '求學路上的重要時刻'
+    },
+    {
+      id: 14,
+      images: ['image22.jpeg', 'image23.jpeg'],
+      title: '結婚喜悅',
+      description: '人生最美好的開始'
+    },
+    {
+      id: 15,
       images: ['image24.jpeg', 'image25.jpeg'],
       title: '阿祖，我們來了！',
       description: ''
     },
     {
-      id: 13,
+      id: 16,
       images: ['image26.jpeg', 'image27.jpeg'],
       title: '全家出遊',
       description: '遊覽車司機說我們好幸福'
     },
     {
-      id: 14,
-      images: ['image28.jpeg', 'image29.jpeg', 'image30.jpeg'],
-      title: '熱鬧的團圓飯',
-      description: ''
+      id: 17,
+      images: ['image28.jpeg', 'image29.jpeg'],
+      title: '熱鬧的團圓飯（一）',
+      description: '溫馨的家庭聚會'
     },
     {
-      id: 15,
+      id: 18,
+      images: ['image30.jpeg'],
+      title: '熱鬧的團圓飯（二）',
+      description: '滿桌的歡聲笑語'
+    },
+    {
+      id: 19,
       images: ['image31.jpeg', 'image32.jpeg'],
       title: '紅包嬤不在了',
       description: '我們的年要怎麼過啊！'
     },
     {
-      id: 16,
+      id: 20,
       images: ['image33.jpeg', 'image34.jpeg'],
       title: '最願意配合演出的阿嬤',
       description: '帶給我們好多歡樂與驚喜'
     },
     {
-      id: 17,
+      id: 21,
       images: ['image35.jpeg'],
       title: '射飛鏢比賽阿嬤頒獎',
       description: ''
     },
     {
-      id: 18,
+      id: 22,
       images: ['image36.jpeg'],
       title: '阿嬤也會玩保齡球',
       description: ''
     },
     {
-      id: 19,
+      id: 23,
       images: ['image37.jpeg'],
       title: '苗栗縣桐花季請阿嬤植樹',
       description: '十年樹木、百年樹人，阿嬤一生樹人無數'
     },
     {
-      id: 20,
+      id: 24,
       images: ['image38.jpeg'],
       title: '珍貴時光',
       description: ''
     },
     {
-      id: 21,
+      id: 25,
       images: ['image39.jpeg'],
       title: '這是我們最偉大的媽媽！',
       description: ''
     },
     {
-      id: 22,
+      id: 26,
       images: [],
       title: '感謝',
       description: '叔公、嬸婆、姨婆，各位爺爺奶奶鄉親好友，經常來電向阿嬤問好或親臨探訪，帶給阿嬤許多歡樂'
     },
     {
-      id: 23,
+      id: 27,
       images: ['image40.jpeg'],
       title: '珍貴回憶',
       description: ''
     },
     {
-      id: 24,
+      id: 28,
       images: ['image41.jpeg'],
       title: '溫馨時光',
       description: ''
     },
     {
-      id: 25,
+      id: 29,
       images: ['image42.jpeg'],
       title: '家庭聚會',
       description: ''
     },
     {
-      id: 26,
+      id: 30,
       images: ['image43.jpeg'],
       title: '快樂時光',
       description: ''
     },
     {
-      id: 27,
+      id: 31,
       images: ['image44.jpeg'],
       title: '美好回憶',
       description: ''
     },
     {
-      id: 28,
+      id: 32,
       images: ['image45.jpeg'],
       title: '溫暖時刻',
       description: ''
     },
     {
-      id: 29,
-      images: ['image46.jpeg', 'image47.jpeg', 'image48.jpeg'],
-      title: '三次返鄉探親',
-      description: ''
+      id: 33,
+      images: ['image46.jpeg', 'image47.jpeg'],
+      title: '三次返鄉探親（一）',
+      description: '回到故鄉的溫暖'
     },
     {
-      id: 30,
+      id: 34,
+      images: ['image48.jpeg'],
+      title: '三次返鄉探親（二）',
+      description: '與親人的珍貴團聚'
+    },
+    {
+      id: 35,
       images: ['image49.jpeg', 'image50.jpeg'],
       title: '捐建寄雲樓',
       description: '讓爺爺一生功德圓滿'
     },
     {
-      id: 31,
+      id: 36,
       images: ['image51.jpeg'],
       title: '清靜不多語',
       description: '永遠帶著淺淺的微笑陪著家人，平凡中見不平凡'
     },
     {
-      id: 32,
+      id: 37,
       images: ['image52.jpeg'],
       title: '多謝了，阿嬤',
       description: '珍重再見!'
@@ -251,13 +281,11 @@ const PhotoAlbum: React.FC = () => {
           <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
             {/* 投影片內容區域 */}
             <div className={`relative ${
-              currentSlideData.images.length <= 1 
+              currentSlideData.images.length === 0
+                ? 'h-64 sm:h-80 md:h-96'
+                : currentSlideData.images.length === 1 
                 ? 'h-64 sm:h-80 md:h-96 lg:h-[500px] xl:h-[600px]'
-                : currentSlideData.images.length <= 2
-                ? 'h-80 sm:h-96 md:h-[400px] lg:h-[500px]'
-                : currentSlideData.images.length <= 4
-                ? 'h-96 sm:h-[450px] md:h-[500px] lg:h-[550px]'
-                : 'h-[400px] sm:h-[500px] md:h-[550px] lg:h-[600px]'
+                : 'h-80 sm:h-96 md:h-[450px] lg:h-[500px] xl:h-[550px]'
             }`}>
               <AnimatePresence mode="wait">
                 <motion.div
@@ -282,27 +310,19 @@ const PhotoAlbum: React.FC = () => {
                       ) : (
                         <div className={`w-full h-full ${
                           currentSlideData.images.length === 2 
-                            ? 'flex flex-col gap-2 sm:gap-3 p-1 sm:p-2' 
-                            : currentSlideData.images.length === 3
-                            ? 'grid grid-rows-2 grid-cols-2 gap-2 sm:gap-3 p-1 sm:p-2'
-                            : currentSlideData.images.length === 4
-                            ? 'grid grid-cols-2 gap-2 sm:gap-3 p-1 sm:p-2'
-                            : 'grid grid-cols-2 sm:grid-cols-3 gap-1 sm:gap-2 p-1 sm:p-2'
+                            ? 'flex flex-row gap-3 sm:gap-4 md:gap-6 p-2 sm:p-4' 
+                            : 'flex flex-col gap-2 sm:gap-3 p-1 sm:p-2'
                         }`}>
                           {currentSlideData.images.map((image, index) => (
                             <div key={index} className={`flex items-center justify-center ${
                               currentSlideData.images.length === 2
-                                ? 'flex-1 min-h-0'
-                                : currentSlideData.images.length === 3
-                                ? index === 0 ? 'row-span-2' : ''
-                                : currentSlideData.images.length === 4
-                                ? 'aspect-square'
-                                : 'aspect-square'
+                                ? 'flex-1 h-full'
+                                : 'w-full'
                             }`}>
                               <img
                                 src={`${process.env.PUBLIC_URL}/gallery/${image}`}
                                 alt={`${currentSlideData.title} ${index + 1}`}
-                                className={`w-full h-full object-contain rounded-md sm:rounded-lg shadow-md sm:shadow-lg`}
+                                className="w-full h-full max-w-full max-h-full object-contain rounded-lg shadow-lg"
                                 onError={(e) => {
                                   e.currentTarget.src = `./gallery/${image}`;
                                 }}
@@ -346,53 +366,74 @@ const PhotoAlbum: React.FC = () => {
             </div>
 
             {/* 投影片資訊 */}
-            <div className="bg-gradient-to-r from-warm-gold/10 to-gentle-brown/10 p-4 lg:p-6">
+            <div className="bg-gradient-to-r from-warm-gold/10 to-gentle-brown/10 p-4 lg:p-6 border-t border-warm-gold/20">
               <div className="text-center">
-                <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gentle-brown mb-2">
+                <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gentle-brown mb-2 leading-tight">
                   {currentSlideData.title}
                 </h2>
                 {currentSlideData.description && (
-                  <p className="text-sm sm:text-base lg:text-lg text-memorial-gray leading-relaxed">
+                  <p className="text-sm sm:text-base lg:text-lg text-memorial-gray leading-relaxed max-w-4xl mx-auto">
                     {currentSlideData.description}
                   </p>
                 )}
+                <div className="mt-3 flex items-center justify-center gap-2 text-xs sm:text-sm text-warm-gold/70">
+                  <span>第 {currentSlide + 1} 張</span>
+                  <span>•</span>
+                  <span>共 {slides.length} 張</span>
+                </div>
               </div>
             </div>
           </div>
 
           {/* 控制面板 */}
-          <div className="mt-4 sm:mt-6 lg:mt-8 bg-white rounded-xl shadow-lg p-3 sm:p-4 lg:p-6">
-            <div className="flex flex-col gap-3 sm:gap-4">
-              {/* 投影片指示器 */}
-              <div className="flex flex-wrap justify-center gap-1 sm:gap-2 max-w-full overflow-hidden">
-                {slides.map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => goToSlide(index)}
-                    className={`w-2 h-2 sm:w-2.5 sm:h-2.5 lg:w-3 lg:h-3 rounded-full transition-all duration-200 ${
-                      index === currentSlide
-                        ? 'bg-warm-gold scale-125'
-                        : 'bg-gray-300 hover:bg-gray-400'
-                    }`}
-                  />
-                ))}
-              </div>
-
+          <div className="mt-4 sm:mt-6 lg:mt-8 bg-white rounded-xl shadow-lg p-3 sm:p-4 lg:p-6 border border-warm-gold/20">
+            <div className="flex flex-col gap-4 sm:gap-5">
               {/* 播放控制 */}
               <div className="flex items-center justify-center gap-3 sm:gap-4">
-                <span className="text-memorial-gray text-xs sm:text-sm lg:text-base">
-                  {currentSlide + 1} / {slides.length}
-                </span>
+                <button
+                  onClick={prevSlide}
+                  className="p-2 sm:p-3 rounded-full bg-gray-100 hover:bg-warm-gold/20 text-gentle-brown transition-all duration-200 hover:scale-105"
+                >
+                  <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+                
                 <button
                   onClick={() => setIsAutoPlay(!isAutoPlay)}
-                  className={`px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg font-medium text-xs sm:text-sm lg:text-base transition-all duration-200 ${
+                  className={`px-4 py-2 sm:px-6 sm:py-3 rounded-lg font-medium text-sm sm:text-base transition-all duration-200 ${
                     isAutoPlay
                       ? 'bg-warm-gold text-white hover:bg-warm-gold/90'
                       : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
                   }`}
                 >
-                  {isAutoPlay ? '⏸️ 暫停' : '▶️ 自動播放'}
+                  {isAutoPlay ? '⏸️ 暫停播放' : '▶️ 自動播放'}
                 </button>
+                
+                <button
+                  onClick={nextSlide}
+                  className="p-2 sm:p-3 rounded-full bg-gray-100 hover:bg-warm-gold/20 text-gentle-brown transition-all duration-200 hover:scale-105"
+                >
+                  <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+
+              {/* 投影片指示器 */}
+              <div className="flex flex-wrap justify-center gap-1 sm:gap-1.5 max-w-full overflow-x-auto px-2">
+                {slides.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => goToSlide(index)}
+                    className={`w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full transition-all duration-200 hover:scale-125 ${
+                      index === currentSlide
+                        ? 'bg-warm-gold scale-125 shadow-md'
+                        : 'bg-gray-300 hover:bg-warm-gold/50'
+                    }`}
+                    title={`第 ${index + 1} 張投影片`}
+                  />
+                ))}
               </div>
             </div>
           </div>
