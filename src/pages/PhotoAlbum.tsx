@@ -77,7 +77,7 @@ const PhotoAlbum: React.FC = () => {
       id: 11,
       images: ['image20.jpeg', 'image21.jpeg', 'image22.jpeg', 'image23.jpeg'],
       title: '畢業與結婚',
-      description: 'image20、image21畢業，image22、image23結婚'
+      description: ''
     },
     {
       id: 12,
@@ -255,7 +255,9 @@ const PhotoAlbum: React.FC = () => {
                 ? 'h-64 sm:h-80 md:h-96 lg:h-[500px] xl:h-[600px]'
                 : currentSlideData.images.length <= 2
                 ? 'h-80 sm:h-96 md:h-[400px] lg:h-[500px]'
-                : 'h-96 sm:h-[400px] md:h-[450px] lg:h-[550px]'
+                : currentSlideData.images.length <= 4
+                ? 'h-96 sm:h-[450px] md:h-[500px] lg:h-[550px]'
+                : 'h-[400px] sm:h-[500px] md:h-[550px] lg:h-[600px]'
             }`}>
               <AnimatePresence mode="wait">
                 <motion.div
@@ -264,7 +266,7 @@ const PhotoAlbum: React.FC = () => {
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -300 }}
                   transition={{ duration: 0.5 }}
-                  className="absolute inset-0 flex items-center justify-center p-4 md:p-6 lg:p-8"
+                  className="absolute inset-0 flex items-center justify-center p-2 sm:p-4 md:p-6 lg:p-8"
                 >
                   {currentSlideData.images.length > 0 ? (
                     <div className="w-full h-full flex items-center justify-center">
@@ -278,25 +280,29 @@ const PhotoAlbum: React.FC = () => {
                           }}
                         />
                       ) : (
-                        <div className={`w-full h-full p-4 ${
-                          currentSlideData.images.length <= 2 
-                            ? 'flex flex-col sm:flex-row items-center justify-center gap-4' 
-                            : currentSlideData.images.length <= 4
-                            ? 'grid grid-cols-1 sm:grid-cols-2 gap-4 items-center justify-items-center'
-                            : 'grid grid-cols-2 md:grid-cols-3 gap-3 items-center justify-items-center'
+                        <div className={`w-full h-full ${
+                          currentSlideData.images.length === 2 
+                            ? 'flex flex-col gap-2 sm:gap-3 p-1 sm:p-2' 
+                            : currentSlideData.images.length === 3
+                            ? 'grid grid-rows-2 grid-cols-2 gap-2 sm:gap-3 p-1 sm:p-2'
+                            : currentSlideData.images.length === 4
+                            ? 'grid grid-cols-2 gap-2 sm:gap-3 p-1 sm:p-2'
+                            : 'grid grid-cols-2 sm:grid-cols-3 gap-1 sm:gap-2 p-1 sm:p-2'
                         }`}>
                           {currentSlideData.images.map((image, index) => (
                             <div key={index} className={`flex items-center justify-center ${
-                              currentSlideData.images.length <= 2 
-                                ? 'w-full max-w-sm' 
-                                : currentSlideData.images.length <= 4
-                                ? 'w-full max-w-xs'
-                                : 'w-full max-w-32 sm:max-w-40'
+                              currentSlideData.images.length === 2
+                                ? 'flex-1 min-h-0'
+                                : currentSlideData.images.length === 3
+                                ? index === 0 ? 'row-span-2' : ''
+                                : currentSlideData.images.length === 4
+                                ? 'aspect-square'
+                                : 'aspect-square'
                             }`}>
                               <img
                                 src={`${process.env.PUBLIC_URL}/gallery/${image}`}
                                 alt={`${currentSlideData.title} ${index + 1}`}
-                                className="w-full h-auto object-contain rounded-lg shadow-lg max-h-48 sm:max-h-56 md:max-h-64"
+                                className={`w-full h-full object-contain rounded-md sm:rounded-lg shadow-md sm:shadow-lg`}
                                 onError={(e) => {
                                   e.currentTarget.src = `./gallery/${image}`;
                                 }}
@@ -323,17 +329,17 @@ const PhotoAlbum: React.FC = () => {
               {/* 導航箭頭 */}
               <button
                 onClick={prevSlide}
-                className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-gentle-brown p-3 rounded-full shadow-lg transition-all duration-200 hover:scale-110"
+                className="absolute left-1 sm:left-2 md:left-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-gentle-brown p-2 sm:p-3 rounded-full shadow-lg transition-all duration-200 hover:scale-110 z-10"
               >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                 </svg>
               </button>
               <button
                 onClick={nextSlide}
-                className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-gentle-brown p-3 rounded-full shadow-lg transition-all duration-200 hover:scale-110"
+                className="absolute right-1 sm:right-2 md:right-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-gentle-brown p-2 sm:p-3 rounded-full shadow-lg transition-all duration-200 hover:scale-110 z-10"
               >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </button>
@@ -355,15 +361,15 @@ const PhotoAlbum: React.FC = () => {
           </div>
 
           {/* 控制面板 */}
-          <div className="mt-6 lg:mt-8 bg-white rounded-xl shadow-lg p-4 lg:p-6">
-            <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
+          <div className="mt-4 sm:mt-6 lg:mt-8 bg-white rounded-xl shadow-lg p-3 sm:p-4 lg:p-6">
+            <div className="flex flex-col gap-3 sm:gap-4">
               {/* 投影片指示器 */}
-              <div className="flex flex-wrap justify-center gap-1 lg:gap-2 max-w-full overflow-hidden">
+              <div className="flex flex-wrap justify-center gap-1 sm:gap-2 max-w-full overflow-hidden">
                 {slides.map((_, index) => (
                   <button
                     key={index}
                     onClick={() => goToSlide(index)}
-                    className={`w-2 h-2 lg:w-3 lg:h-3 rounded-full transition-all duration-200 ${
+                    className={`w-2 h-2 sm:w-2.5 sm:h-2.5 lg:w-3 lg:h-3 rounded-full transition-all duration-200 ${
                       index === currentSlide
                         ? 'bg-warm-gold scale-125'
                         : 'bg-gray-300 hover:bg-gray-400'
@@ -373,13 +379,13 @@ const PhotoAlbum: React.FC = () => {
               </div>
 
               {/* 播放控制 */}
-              <div className="flex items-center gap-3 lg:gap-4">
-                <span className="text-memorial-gray text-sm lg:text-base">
+              <div className="flex items-center justify-center gap-3 sm:gap-4">
+                <span className="text-memorial-gray text-xs sm:text-sm lg:text-base">
                   {currentSlide + 1} / {slides.length}
                 </span>
                 <button
                   onClick={() => setIsAutoPlay(!isAutoPlay)}
-                  className={`px-3 py-2 lg:px-4 lg:py-2 rounded-lg font-medium text-sm lg:text-base transition-all duration-200 ${
+                  className={`px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg font-medium text-xs sm:text-sm lg:text-base transition-all duration-200 ${
                     isAutoPlay
                       ? 'bg-warm-gold text-white hover:bg-warm-gold/90'
                       : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
